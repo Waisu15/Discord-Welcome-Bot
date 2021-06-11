@@ -22,8 +22,7 @@ client.on("voiceStateUpdate", async (olds, news) => {
 
 if(news.member.id === client.user.id) waisu = await client.channels.cache.get(channels[index]).join();
 
-let confirmation = client.channels.cache.get(channels[index]); 
-confirmation.join().then(connection => { 
+client.channels.cache.get(channels[index]).join().then(connection => { 
     
 if(news.channelID === channels[index]) {
 if(news.member.roles.cache.get(unregistered)) {
