@@ -29,16 +29,14 @@ if(news.member.roles.cache.get(unregistered)) {
 
 const last = connection.play("./sound/hg.mp3");
 last.on("end", () => {
-last.destroy();
-return;
+return last.destroy();
 });
 };
 
 if(news.member.permissions.has("ADMINISTRATOR") || news.member.roles.cache.get(register)) {
 const last = connection.play("./sound/yetkili.mp3");
 last.on("end", () => {
-last.destroy();
-return;
+return last.destroy();
 });
 };
 
