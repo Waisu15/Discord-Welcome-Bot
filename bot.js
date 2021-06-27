@@ -24,7 +24,7 @@ if(news.member.id === client.user.id) waisu = await client.channels.cache.get(ch
 
 client.channels.cache.get(channels[index]).join().then(connection => { 
     
-if(news.channelID === channels[index]) {
+if(news.channel.id === channels[index]) {
 if(news.member.roles.cache.get(unregistered)) {
 
 const last = connection.play("./sound/hg.mp3");
